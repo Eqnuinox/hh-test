@@ -12,7 +12,7 @@ export class UserService {
 
   // get list of all users
   async findAll(page: number, take: number): Promise<{ users: UsersEntity[]; count: number }> {
-    const skip = 20 * (page - 1);
+    const skip = take * (page - 1);
     const [users, count] = await this.usersRepo.findAndCount({ take: take, skip: skip });
     return { users, count };
   }
