@@ -1,0 +1,22 @@
+.paginationItem{
+  padding: .5rem .7rem;
+  margin: 1px;
+  border: 1px solid #DEE2E6;
+  background: #fff;
+  text-decoration: none;
+  color: #0071F6;
+}
+
+.active{
+  border: 1px solid #0071F6;
+  background:#0071F6;
+  color: #fff;
+}
+
+.paginationBorder_r_left{
+  border-radius: 5px 0 0 5px;
+}
+
+.paginationBorder_r_right{
+  border-radius: 0 5px 5px 0;
+}
